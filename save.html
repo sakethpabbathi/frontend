@@ -12,7 +12,7 @@
 
     <script>
         function loadSavedProducts() {
-            fetch('http://localhost:3000/api/saved-products')
+            fetch('https://backend-fdpp.onrender.com/api/saved-products')
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
@@ -34,7 +34,7 @@
         }
 
         function removeSavedProduct(productId) {
-            fetch(`http://localhost:3000/api/remove-saved-product/${productId}`, { method: 'DELETE' })
+            fetch(`https://backend-fdpp.onrender.com/api/remove-saved-product/${productId}`, { method: 'DELETE' })
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {

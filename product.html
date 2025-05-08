@@ -152,7 +152,7 @@
                 const productName = product.dataset.name;
                 const productPrice = product.dataset.price;
 
-                fetch('http://localhost:3000/api/add-to-cart', {
+                fetch('https://backend-fdpp.onrender.com/api/add-to-cart', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ productId, productName, productPrice })
@@ -178,7 +178,7 @@
                 const productName = product.dataset.name;
                 const productPrice = product.dataset.price;
 
-                fetch('http://localhost:3000/api/save-product', {
+                fetch('https://backend-fdpp.onrender.com/api/save-product', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ productId, productName, productPrice })

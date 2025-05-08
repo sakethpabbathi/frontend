@@ -15,7 +15,7 @@
 
     <script>
         function loadCart() {
-            fetch('http://localhost:3000/api/cart')
+            fetch('https://backend-fdpp.onrender.com/api/cart')
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
@@ -37,7 +37,7 @@
         }
 
         function removeFromCart(productId) {
-            fetch(`http://localhost:3000/api/remove-from-cart/${productId}`, { method: 'DELETE' })
+            fetch(`https://backend-fdpp.onrender.com/api/remove-from-cart/${productId}`, { method: 'DELETE' })
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {

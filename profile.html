@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             profileImage: profileImageData // Send base64 image data
         };
 
-        fetch('http://localhost:3000/api/profile', { // Adjust URL if needed
+        fetch('https://backend-fdpp.onrender.com/api/profile', { // Adjust URL if needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // (Optional) Load data from the backend on page load to ensure consistency
-    fetch('http://localhost:3000/api/profile')
+    fetch('https://backend-fdpp.onrender.com/api/profile')
         .then(response => response.json())
         .then(data => {
             if (data) {
