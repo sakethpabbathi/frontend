@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log('Success:', data);
     alert('Profile saved successfully!');
     // Redirect to mainapp.html
-    window.location.href = 'mainapp.html';
+    window.location.href = 'https://frontend-uoj7.onrender.com/mainapp.html';
 })
 .catch((error) => {
     console.error('Error:', error);
@@ -102,9 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+const phoneNumber = localStorage.getItem('number');
     // (Optional) Load data from the backend on page load to ensure consistency
-    fetch('https://backend-fdpp.onrender.com/api/profile')
+    fetch(`https://backend-fdpp.onrender.com/api/profile?phoneNumber=${loggedInNumber}`)
         .then(response => response.json())
         .then(data => {
             if (data) {
@@ -117,7 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('name', data.name || '');
                 localStorage.setItem('number', data.phone_number || '');
                 localStorage.setItem('address', data.address || '');
-            }
+            } else {
+            // Clear form for new user
+            nameInput.value = '';
+            addressInput.value = '';
+            profileImage.src = 'default-profile.png';
+            localStorage.setItem('profileImage', 'default-profile.png');
+            localStorage.setItem('name', '');
+            localStorage.setItem('address', '');
+        }
+            
         })
         .catch(error => {
             console.error('Error fetching profile from database:', error);

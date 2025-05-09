@@ -36,8 +36,9 @@ document.getElementById("loginForm").addEventListener("submit", async function (
         });
 
         if (response.ok) {
+             localStorage.setItem('number', number);
             alert("Login successful!");
-            window.location.href = "mainapp.html";
+            window.location.href = "https://frontend-uoj7.onrender.com/mainapp.html";
         } else {
             const data = await response.json();
             alert(data.error || "Invalid Number or Password.");
@@ -47,6 +48,42 @@ document.getElementById("loginForm").addEventListener("submit", async function (
         alert("An error occurred. Please try again.");
     }
 });
+
+
+// document.getElementById("loginForm").addEventListener("submit", async function (event) {
+//     event.preventDefault();
+
+//     const number = document.getElementById("number").value;
+//     const password = document.getElementById("password").value;
+
+//     const submitButton = document.getElementById("submit");
+//     submitButton.disabled = true;
+//     submitButton.innerText = "Logging in...";
+
+//     try {
+//         const response = await fetch("https://backend-fdpp.onrender.com/login", {
+//             method: "POST",
+//             headers: { "Content-Type": "application/json" },
+//             body: JSON.stringify({ number, password }),
+//         });
+
+//         if (response.ok) {
+//             alert("Login successful!");
+//             window.location.href = "https://frontend-uoj7.onrender.com/mainapp.html";
+//         } else {
+//             const data = await response.json();
+//             console.error("Login Error:", data.error);
+//             alert(data.error || "Invalid Number or Password.");
+//         }
+//     } catch (error) {
+//         console.error("Error:", error);
+//         alert("An error occurred. Please try again.");
+//     } finally {
+//         submitButton.disabled = false;
+//         submitButton.innerText = "Login";
+//     }
+// });
+
 </script>
 
 </body>
