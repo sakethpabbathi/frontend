@@ -45,11 +45,17 @@ body{
            }
     
         a{
-           padding-left: 150px;
+           margin-left: 41%;
+           border-radius: 3px;
+          text-decoration: none;
+          padding: 4px 12px;
            color:blue;
         }
     a:hover{
-      color: green;
+      background-color: cornflowerblue;
+      color: white;
+      
+
     }
     @media (max-width: 768px) {
 .f1{

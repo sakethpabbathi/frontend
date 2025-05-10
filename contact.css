@@ -94,27 +94,27 @@
   
   .btn {
     background-color: yellow;
-    padding: 8px 12px;
+    color: #333;
     border: none;
     border-radius: 10px;
+    padding: 8px 12px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap;
+     font-size: 16px;
+     border-radius: 5px;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    
   }
   
-  .btn a {
-    color: black;
-    text-decoration: none;
-    font-family: Calibri, sans-serif;
-  }
   
   .btn:hover {
-    color: red;
+    background-color: red;
+    color: white;
   }
   
-  .btn:hover a {
-    color: blue;
-  }
+  
   
   .active {
     background-color: cornflowerblue;

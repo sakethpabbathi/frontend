@@ -86,29 +86,27 @@
   
   button {
     background-color: yellow;
-    
+    color: #333;
     border: none;
     border-radius: 10px;
     padding: 8px 12px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap;
+     font-size: 16px;
+     border-radius: 5px;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    
   }
   
   button:hover {
     
-    color: red;
+    background-color: red;
+    color: white;
   }
   
-  button a {
-    color:black;
-    text-decoration: none;
-    font-family: Calibri, sans-serif;
-  }
   
-  button:hover a {
-    color: blue;
-  }
   
   .active {
     background-color: cornflowerblue;
