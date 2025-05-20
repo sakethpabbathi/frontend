@@ -202,7 +202,9 @@
   .content{
     width: auto;
   }
-  }
+  .product{
+    left: 6%;
+  }  }
   
 html{
     height: 100%;
