@@ -20,7 +20,10 @@
     background-color: yellow;
     padding: 8px 0;
     font-family: Calibri, sans-serif;
-    overflow: hidden;
+    overflow: hidden;width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     
   }
   
