@@ -222,7 +222,7 @@ html{
     align-items: center;
     padding: 20px;
     margin-top: 80px;
-    background: linear-gradient(to bottom, #fff, #ddd);
+    /* background: linear-gradient(to bottom, #fff, #ddd); */
     padding-top: 50px;
     width: auto;
     
