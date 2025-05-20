@@ -229,7 +229,7 @@ html{
 .product-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 27px;
     flex-wrap: wrap;
     margin-top: -44px;
 }
