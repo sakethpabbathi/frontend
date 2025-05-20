@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
  .horBAR {
     width: 100%;
     position: fixed;
@@ -132,16 +129,11 @@
     .scroll-container {
       padding: 0px 0;
     }
-  
     #nav-links {
       padding: 0 16px;
     }
     
   }
-  
-  
-  
-  
   .verBar {
       position: fixed;
       top: 51px;
@@ -178,6 +170,7 @@
       top: 62px; 
       z-index: 999; 
       width: 109px;
+      height: 100%;
   
     }
   .verBar a{
@@ -193,14 +186,6 @@
     width: 306px;
   }
   }
-  
-
-
-
-
-
-
-
 html{
     height: 100%;
     margin: 0%;
@@ -216,10 +201,6 @@ html{
     padding-top: 50px;
     
 }
-
-
-
-
 .product-container {
     display: flex;
     justify-content: center;

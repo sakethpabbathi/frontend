@@ -1,7 +1,4 @@
 
-
-
-
 .horBAR {
     width: 100%;
     position: fixed;
@@ -134,10 +131,6 @@
     }
     
   }
-  
-  
-  
-  
   .verBar {
       position: fixed;
       top: 51px;
@@ -187,9 +180,6 @@
   }
   
   }
-  
-
-  
 h4, h1 {
     font-weight: bold;
     font-family: Calibri, sans-serif;
@@ -243,10 +233,6 @@ a:hover {
     }
 }
 
-
-
-
-
 .slide {
     margin: 120px auto 0 auto; /* centers it horizontally */
     width: 80%; /* make it more responsive */
@@ -272,8 +258,6 @@ a:hover {
 .slide img:hover {
     transform: scale(1.1);
 }
-
-
     body {
         background-image: url(ayodhya.png);
         background-repeat: no-repeat;
@@ -281,9 +265,6 @@ a:hover {
         margin: 0;
         padding-left: 120px;
     }
-    
-
-
 
 .product{
     border: 2px solid yellow;
