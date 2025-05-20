@@ -181,6 +181,7 @@
       top: 62px; 
       z-index: 999; 
       width: 109px;
+      height: 100%;
   
     }
   .verBar a{
